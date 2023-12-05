@@ -1,0 +1,38 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program (tsx)",
+      "runtimeVersion": "18",
+      "program": "${file}",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/tsx",
+      "sourceMaps": true,
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/node_modules/**"
+      ],
+      "console": "internalConsole",
+      "cwd": "${workspaceFolder}",
+      "args": [],
+      "killBehavior": "polite"
+    },
+    {
+      "request": "launch",
+      "name": "Launch Program (deno)",
+      "type": "node",
+      "program": "${fileBasename}",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "deno",
+      "runtimeArgs": ["run", "--inspect-wait", "--allow-all", "--unstable"],
+      "attachSimplePort": 9229,
+      "console": "internalConsole",
+      "envFile": "${workspaceFolder}/.env.local",
+      // "killBehavior": "polite"
+    },
+  ]
+}

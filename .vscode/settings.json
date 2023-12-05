@@ -1,0 +1,12 @@
+{
+  "deno.enable": true,
+  "deno.lint": true,
+  "deno.testing.args": [
+    "--allow-all",
+    "--no-check",
+    "--unstable",
+    "--watch"
+  ],
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

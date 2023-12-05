@@ -1,0 +1,13 @@
+{
+  "imports": {
+    "@/": "./src/",
+    "./": "./src/",
+    "$lib/": "./src/lib/",
+    "@/deps.ts": "./src/deno/deps.ts",
+    "@/env.ts": "./src/deno/env.ts",
+    "$std/": "https://deno.land/std@0.208.0/"
+  },
+  "scopes": {
+    "https://esm.sh/v135/": {}
+  }
+}

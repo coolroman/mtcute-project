@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "isolatedModules": true,
+    "lib": [
+			"esnext",
+			"DOM",
+			"DOM.Iterable"
+		],
+		"moduleResolution": "node",
+		"module": "ESNext",
+		"target": "esnext",
+		"ignoreDeprecations": "5.0",
+    "paths": {
+      "@/deps.ts": ["./src/node/deps.ts"],
+      "@/env.ts": ["./src/node/env.ts"],
+      "@/": ["./src/"],
+      "@/*": ["./src/*"]
+    },
+  },
+  "include": [
+    "./src",
+  ],
+  "exclude": [
+    "./src/deno",
+  ]
+}

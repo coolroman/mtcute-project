@@ -1,0 +1,34 @@
+{
+  "tasks": {
+    "check": "deno lint --unstable src/**/*.ts && deno check src/*.ts",
+    "test": "deno test --allow-all --unstable",
+    "precommit": "deno task check",
+    "cache:reload": "deno cache --reload src/*.ts"
+  },
+  "compilerOptions": {
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "dom.asynciterable",
+      "deno.ns",
+      "deno.unstable"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "types": [],
+    "emitDecoratorMetadata": true
+  },
+  "nodeModulesDir": true,
+  "exclude": [".vscode", "node_modules", "src/node"],
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    },
+    "exclude": ["src/node"]
+  },
+  "fmt": {
+    "exclude": []
+  },
+  "importMap": "import-map.json"
+}
