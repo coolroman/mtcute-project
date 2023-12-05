@@ -5,18 +5,30 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@mtcute/client':
+    specifier: ^0.2.2
+    version: 0.2.2
   '@mtcute/core':
     specifier: ^0.2.3
     version: 0.2.3
   '@mtcute/dispatcher':
     specifier: ^0.2.1
     version: 0.2.1(@mtcute/core@0.2.3)(@mtcute/tl@167.0.0)(vitest@0.34.6)
+  '@mtcute/http-proxy':
+    specifier: ^0.2.0
+    version: 0.2.0
   '@mtcute/node':
     specifier: ^0.2.0
     version: 0.2.0
+  '@types/ws':
+    specifier: ^8.5.10
+    version: 8.5.10
   dotenv-flow:
     specifier: ^4.0.1
     version: 4.0.1
+  ws:
+    specifier: ^8.14.2
+    version: 8.14.2
   zod:
     specifier: ^3.22.4
     version: 3.22.4
@@ -484,6 +496,12 @@ packages:
       long: 5.2.3
     dev: false
 
+  /@mtcute/http-proxy@0.2.0:
+    resolution: {integrity: sha512-UG4sNI1r0WR2iGPu+KiTYlDHjXK7wZ3mHNviMBd2UgezkYiPieLXXtSBlxORiBYTlhouCUoxlU20Kkw9DET/4A==}
+    dependencies:
+      '@mtcute/core': 0.2.3
+    dev: false
+
   /@mtcute/markdown-parser@0.2.0:
     resolution: {integrity: sha512-MiGTmPskpuIgs0K2Doazn390fnTdt2mij5GdnPVU3fTUgh+PVLi3doSJ4CIgA+D1o9THCuP9deXMsLAgxrdkZg==}
     dependencies:
@@ -658,6 +676,12 @@ packages:
     resolution: {integrity: sha512-XJavIpZqiXID5Yxnxv3RUDKTN5b81ddNC3ecsA0SoFXz/QU8OGBwZGMomiq0zw+uuqbL/krztv/DINAQ/EV4gg==}
     dependencies:
       undici-types: 5.26.5
+
+  /@types/ws@8.5.10:
+    resolution: {integrity: sha512-vmQSUcfalpIq0R9q7uTo2lXs6eGIpt9wtnLdMv9LVpIjCA/+ufZRozlVoVelIYixx1ugCBKDhn89vnsEGOCx9A==}
+    dependencies:
+      '@types/node': 20.10.3
+    dev: false
 
   /@vitest/expect@0.34.6:
     resolution: {integrity: sha512-QUzKpUQRc1qC7qdGo7rMK3AkETI7w18gTCUrsNnyjjJKYiuUB9+TQK3QnR1unhCnWRC0AbKv2omLGQDF/mIjOw==}
@@ -1447,6 +1471,19 @@ packages:
 
   /wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
+    dev: false
+
+  /ws@8.14.2:
+    resolution: {integrity: sha512-wEBG1ftX4jcglPxgFCMJmZ2PLtSbJ2Peg6TmpJFTbe9GZYOQCDPdMYu/Tm0/bGZkw8paZnJY45J4K2PZrLYq8g==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
     dev: false
 
   /yallist@4.0.0:

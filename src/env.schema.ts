@@ -8,4 +8,6 @@ export const schema = z.object({
 
   TLG_API_ID: z.string(),
   TLG_API_HASH: z.string(),
+
+  TLG_SESSION: z.string(),
 });

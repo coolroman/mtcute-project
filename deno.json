@@ -20,15 +20,33 @@
     "emitDecoratorMetadata": true
   },
   "nodeModulesDir": true,
-  "exclude": [".vscode", "node_modules", "src/node"],
+  "exclude": [
+    ".vscode",
+    "node_modules",
+    "src/node"
+  ],
   "lint": {
     "rules": {
-      "tags": ["recommended"]
+      "tags": [
+        "recommended"
+      ]
     },
-    "exclude": ["src/node"]
+    "exclude": [
+      "src/node"
+    ]
   },
   "fmt": {
     "exclude": []
   },
-  "importMap": "import-map.json"
+  "importMap": "import-map.json",
+  "deploy": {
+    "project": "9f444086-922f-4eea-8371-bcb08d313a09",
+    "exclude": [],
+    "include": [
+      "src",
+      "import-map.json",
+      ".env"
+    ],
+    "entrypoint": "src/deno/server.ts"
+  }
 }

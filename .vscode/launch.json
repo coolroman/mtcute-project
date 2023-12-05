@@ -25,7 +25,7 @@
       "request": "launch",
       "name": "Launch Program (deno)",
       "type": "node",
-      "program": "${fileBasename}",
+      "program": "${file}",
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "deno",
       "runtimeArgs": ["run", "--inspect-wait", "--allow-all", "--unstable"],
