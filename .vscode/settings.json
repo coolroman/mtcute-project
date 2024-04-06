@@ -1,12 +1,8 @@
 {
   "deno.enable": true,
   "deno.lint": true,
-  "deno.testing.args": [
-    "--allow-all",
-    "--no-check",
-    "--unstable",
-    "--watch"
-  ],
+  "deno.testing.args": ["--allow-all", "--no-check", "--unstable", "--watch"],
 
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

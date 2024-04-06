@@ -13,26 +13,18 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "isolatedModules": true,
-    "lib": [
-			"esnext",
-			"DOM",
-			"DOM.Iterable"
-		],
-		"moduleResolution": "node",
-		"module": "ESNext",
-		"target": "esnext",
-		"ignoreDeprecations": "5.0",
+    "lib": ["esnext", "DOM", "DOM.Iterable"],
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "target": "ESNext",
+    "ignoreDeprecations": "5.0",
     "paths": {
       "@/deps.ts": ["./src/node/deps.ts"],
       "@/env.ts": ["./src/node/env.ts"],
       "@/": ["./src/"],
       "@/*": ["./src/*"]
-    },
+    }
   },
-  "include": [
-    "./src",
-  ],
-  "exclude": [
-    "./src/deno",
-  ]
+  "include": ["./src"],
+  "exclude": ["./src/deno"]
 }

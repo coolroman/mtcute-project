@@ -1,24 +1,21 @@
-import { mtcuteNode, clientOptions } from "@/deps.ts";
+import { clientOptions, mtcuteNode } from "@/deps.ts";
 import { env } from "@/env.ts";
 import { DeferredPromise } from "@/lib/deferred.ts";
 
 export function runTgTask<T = void>(
-  task: (tg: mtcuteNode.NodeTelegramClient) => Promise<T>
+  task: (tg: mtcuteNode.TelegramClient) => Promise<T>
 ) {
-  const tg = new mtcuteNode.NodeTelegramClient({
+  const tg = new mtcuteNode.TelegramClient({
     apiId: env.TLG_API_ID,
     apiHash: env.TLG_API_HASH,
     ...clientOptions,
   });
 
-  if (env.TLG_SESSION) {
-    tg.importSession(env.TLG_SESSION);
-  }
-
   const deferred = new DeferredPromise<T>();
 
   tg.run(
     {
+      session: env.TLG_SESSION,
       phone: () => tg.input("phone > "),
       code: () => tg.input("code > "),
       password: () => tg.input("password > "),

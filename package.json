@@ -5,26 +5,26 @@
   "main": "src/main.ts",
   "type": "module",
   "scripts": {
-    "start:deno": "deno run --allow-all --env=.env.local main.ts",
+    "start:deno": "deno run --allow-all --env=.env.local src/main.ts",
     "start:tsx": "tsx src/main.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@mtcute/client": "^0.2.2",
-    "@mtcute/core": "^0.2.3",
-    "@mtcute/dispatcher": "^0.2.1",
-    "@mtcute/http-proxy": "^0.2.0",
-    "@mtcute/node": "^0.2.0",
+    "@mtcute/core": "^0.10.1",
+    "@mtcute/dispatcher": "^0.10.0",
+    "@mtcute/http-proxy": "^0.10.0",
+    "@mtcute/node": "^0.10.0",
     "@types/ws": "^8.5.10",
-    "dotenv-flow": "^4.0.1",
-    "ws": "^8.14.2",
+    "dotenv-flow": "^4.1.0",
+    "ws": "^8.16.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/dotenv-flow": "^3.3.3",
-    "@types/node": "^20.10.3",
-    "tsx": "^4.6.2"
+    "@types/node": "^20.12.5",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.4"
   }
 }
